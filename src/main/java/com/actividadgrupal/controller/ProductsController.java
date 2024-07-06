@@ -21,7 +21,7 @@ public class ProductsController {
 
     private final ProductsService service;
 
-    @CrossOrigin(origins = "https://tienda-tenis.vercel.app/")
+    @CrossOrigin(origins = "*")
     @GetMapping("/products")
     public ResponseEntity<ProductsQueryResponse> getProducts(
             @RequestParam(required = false) String name,
