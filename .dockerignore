@@ -1,0 +1,7 @@
+target/*.jar
+target/*-sources.jar
+target/*-javadoc.jar
+target/*-tests.jar
+.git
+.gitignore
+README.md
