@@ -21,7 +21,7 @@ FROM openjdk:17-slim
 WORKDIR /app
 
 # Copiar el archivo JAR desde la etapa de construcción
-COPY --from=build /app/target/search-engine-1.0-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/search-service-1.0-SNAPSHOT.jar app.jar
 
 # Exponer el puerto en el que la aplicación escucha
 EXPOSE 8080
